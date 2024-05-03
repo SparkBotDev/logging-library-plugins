@@ -1,6 +1,6 @@
 {
 	"name": "@sparkbot/logger-console",
-	"version": "0.1.0-alpha.0",
+	"version": "0.1.0",
 	"description": "Official Spark⚡️Bot logging library plugin which uses console methods for logging",
 	"author": "Brian Lister <brian@sparkforge.dev> (https://sparkforge.dev)",
 	"homepage": "https://github.com/SparkBotDev/logging-library-plugins/tree/main/plugins/logger-console#readme",
