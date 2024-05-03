@@ -1,0 +1,27 @@
+import {
+	LoggerLevel,
+	type LoggerPlugin,
+} from '@sparkbot/logger-plugin-interface';
+
+class ConsoleLogger implements LoggerPlugin {
+	constructor(readonly options: { loggingLevel: LoggerLevel }) {}
+	error(exception: Error | string) {
+		if (this.options.loggingLevel <= LoggerLevel.error)
+			console.error(exception);
+	}
+
+	warn(exception: Error | string) {
+		if (this.options.loggingLevel <= LoggerLevel.warn) console.warn(exception);
+	}
+
+	info(exception: Error | string) {
+		if (this.options.loggingLevel <= LoggerLevel.info) console.info(exception);
+	}
+
+	debug(exception: Error | string) {
+		if (this.options.loggingLevel <= LoggerLevel.debug)
+			console.debug(exception);
+	}
+}
+
+export default ConsoleLogger;
