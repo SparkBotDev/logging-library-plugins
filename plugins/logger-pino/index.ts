@@ -1,7 +1,7 @@
 import { type LoggerPlugin } from '@sparkbot/logger-plugin-interface';
 import { pino, type LoggerOptions, type TransportTargetOptions } from 'pino';
 
-export class PinoLogger implements LoggerPlugin {
+export class Logger implements LoggerPlugin {
 	private readonly logger;
 
 	constructor(readonly options: { transports: TransportTargetOptions[] }) {

@@ -3,7 +3,7 @@ import {
 	type LoggerPlugin,
 } from '@sparkbot/logger-plugin-interface';
 
-class ConsoleLogger implements LoggerPlugin {
+export class Logger implements LoggerPlugin {
 	constructor(readonly options: { loggingLevel: LoggerLevel }) {}
 	error(exception: Error | string) {
 		if (this.options.loggingLevel <= LoggerLevel.error)
@@ -23,5 +23,3 @@ class ConsoleLogger implements LoggerPlugin {
 			console.debug(exception);
 	}
 }
-
-export default ConsoleLogger;
