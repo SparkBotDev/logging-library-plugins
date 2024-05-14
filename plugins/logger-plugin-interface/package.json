@@ -1,6 +1,6 @@
 {
 	"name": "@sparkbot/logger-plugin-interface",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Interface for Spark⚡️Bot logging library plugins",
 	"author": "Brian Lister <brian@sparkforge.dev> (https://sparkforge.dev)",
 	"homepage": "https://github.com/SparkBotDev/logger-plugins/tree/main/plugins/logger-plugin-interface#readme",
