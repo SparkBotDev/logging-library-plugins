@@ -9,6 +9,7 @@
 		"url": "git@github.com:SparkBotDev/logging-library-plugins.git"
 	},
 	"private": true,
+	"type": "module",
 	"workspaces": [
 		"plugins/*"
 	],
@@ -23,15 +24,12 @@
 			"xo"
 		]
 	},
-	"dependencies": {
-		"pino-pretty": "^11.0.0"
-	},
 	"devDependencies": {
-		"lerna": "^8.1.2",
 		"@commitlint/cli": "^19.2.1",
 		"@commitlint/config-conventional": "^19.1.0",
 		"@types/bun": "latest",
 		"husky": "^9.0.11",
+		"lerna": "^8.1.2",
 		"lint-staged": "^15.2.2",
 		"prettier": "^3.2.5",
 		"xo": "^0.58.0"

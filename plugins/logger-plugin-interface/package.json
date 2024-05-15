@@ -13,5 +13,9 @@
 		"directory": "plugins/logger-plugin-interface"
 	},
 	"license": "MIT",
-	"main": "index.js"
+	"main": "index.ts",
+	"type": "module",
+	"dependencies": {
+		"discord.js": "^14.15.2"
+	}
 }

@@ -1,10 +1,14 @@
-import {
-	LoggerLevel,
-	type LoggerPlugin,
-} from '@sparkbot/logger-plugin-interface';
+import { type Client } from 'discord.js';
+import { LoggerLevel, LoggerPlugin } from '@sparkbot/logger-plugin-interface';
 
-export class Logger implements LoggerPlugin {
-	constructor(readonly options: { loggingLevel: LoggerLevel }) {}
+export class Logger extends LoggerPlugin {
+	constructor(
+		client: Client,
+		override readonly options: { loggingLevel: LoggerLevel },
+	) {
+		super(client, options);
+	}
+
 	error(exception: Error | string) {
 		if (this.options.loggingLevel <= LoggerLevel.error)
 			console.error(exception);
