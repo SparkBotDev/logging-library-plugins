@@ -1,10 +1,15 @@
-import { type LoggerPlugin } from '@sparkbot/logger-plugin-interface';
+import { LoggerPlugin } from '@sparkbot/logger-plugin-interface';
 import { pino, type LoggerOptions, type TransportTargetOptions } from 'pino';
+import { type Client } from 'discord.js';
 
-export class Logger implements LoggerPlugin {
+export class Logger extends LoggerPlugin {
 	private readonly logger;
 
-	constructor(readonly options: { transports: TransportTargetOptions[] }) {
+	constructor(
+		client: Client,
+		override readonly options: { transports: TransportTargetOptions[] },
+	) {
+		super(client, options);
 		const transport = pino.transport({
 			targets: options.transports,
 		}) as LoggerOptions;
