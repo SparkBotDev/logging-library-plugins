@@ -1,29 +1,30 @@
 {
-  "compilerOptions": {
-    // Configure modes
-    "lib": ["ESNext"],
-    "target": "ESNext",
-    "module": "NodeNext",
-    "moduleDetection": "force",
-    "moduleResolution": "NodeNext",
-    "esModuleInterop": true,
-    "allowJs": true,
+	"compilerOptions": {
+		// Configure modes
+		"lib": ["ESNext"],
+		"target": "ESNext",
+		"module": "NodeNext",
+		"moduleDetection": "force",
+		"moduleResolution": "NodeNext",
+		"esModuleInterop": true,
+		"allowJs": true,
 
-    // Strict code checking
-    "strict": true,
-    "allowUnusedLabels": false,
-    "allowUnreachableCode": false,
-    "exactOptionalPropertyTypes": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "forceConsistentCasingInFileNames": true,
+		// Strict code checking
+		"strict": true,
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"forceConsistentCasingInFileNames": true,
 
-		// Just to stop lame errors
-		"outDir": "dist"
-  }
+		// Since this is a Bun app, there is no reason to not use ts extensions in the code
+		"allowImportingTsExtensions": true,
+		"noEmit": true
+	}
 }

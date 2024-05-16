@@ -3,7 +3,7 @@ import { pino, type LoggerOptions, type TransportTargetOptions } from 'pino';
 import { type Client } from 'discord.js';
 
 export class Logger extends LoggerPlugin {
-	private readonly logger;
+	private readonly logger: pino.Logger;
 
 	constructor(
 		client: Client,

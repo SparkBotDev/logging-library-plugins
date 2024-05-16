@@ -14,9 +14,10 @@
 		"plugins/*"
 	],
 	"scripts": {
-		"lint": "prettier --write . && xo",
+		"lint": "prettier . --check; xo; markdownlint-cli2 .; tsc --noEmit --skipLibCheck",
 		"commit": "lint-staged",
-		"prepare": "husky"
+		"prepare": "husky",
+		"coverage": "typescript-coverage-report"
 	},
 	"lint-staged": {
 		"*.ts": [
@@ -32,6 +33,7 @@
 		"lerna": "^8.1.2",
 		"lint-staged": "^15.2.2",
 		"prettier": "^3.2.5",
+		"typescript-coverage-report": "^1.0.0",
 		"xo": "^0.58.0"
 	},
 	"peerDependencies": {

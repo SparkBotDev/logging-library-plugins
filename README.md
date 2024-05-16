@@ -19,4 +19,12 @@ The readme for each plugin will have detailed instructions on its use.  In gener
 
 ## Creating a plugin
 
-Creating a plugin requires implementing the [LoggerPlugin](https://github.com/SparkBotDev/logging-library-plugins/tree/main/plugins/logger-plugin-interface#readme) interface.
+Creating a logger plugin requires extending the [LoggerPlugin](https://github.com/SparkBotDev/logging-library-plugins/tree/main/plugins/logger-plugin-interface#readme) interface class and exporting with the name Logger.
+
+```ts
+export class Logger extends LoggerPlugin {}
+```
+
+The `error()`, `warn()`, `info()`, and `debug()` methods must be implemented. Your plugin should provide some mechanism that allows the developer to determine what level of logging to emit.
+
+Looking at the [official plugins](#official-plugins) would be a good starting place for understanding how the plugins operate.

@@ -16,7 +16,7 @@
   "main": "index.ts",
   "type": "module",
   "dependencies": {
-    "@sparkbot/logger-plugin-interface": "latest",
+    "@sparkbot/logger-plugin-interface": "^0.3.0",
     "discord.js": "^14.15.2",
     "pino": "^9.0.0"
   }
