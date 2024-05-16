@@ -1,23 +1,23 @@
 {
-  "name": "@sparkbot/logger-pino",
-  "version": "0.2.0",
-  "description": "Official Spark⚡️Bot logging library that implements pino logging",
-  "author": "Brian Lister <brian@sparkforge.dev> (https://sparkforge.dev)",
-  "homepage": "https://github.com/SparkBotDev/logging-library-plugins/tree/main/plugins/logger-pino#readme",
-  "bugs": {
-    "url": "https://github.com/SparkBotDev/SparkBot-Development/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SparkBotDev/logging-library-plugins.git",
-    "directory": "plugins/logger-pino"
-  },
-  "license": "MIT",
-  "main": "index.ts",
-  "type": "module",
-  "dependencies": {
-    "@sparkbot/logger-plugin-interface": "^0.3.0",
-    "discord.js": "^14.15.2",
-    "pino": "^9.0.0"
-  }
+	"name": "@sparkbot/logger-pino",
+	"version": "0.3.0",
+	"description": "Official Spark⚡️Bot logging library that implements pino logging",
+	"author": "Brian Lister <brian@sparkforge.dev> (https://sparkforge.dev)",
+	"homepage": "https://github.com/SparkBotDev/logging-library-plugins/tree/main/plugins/logger-pino#readme",
+	"bugs": {
+		"url": "https://github.com/SparkBotDev/SparkBot-Development/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SparkBotDev/logging-library-plugins.git",
+		"directory": "plugins/logger-pino"
+	},
+	"license": "MIT",
+	"main": "index.ts",
+	"type": "module",
+	"dependencies": {
+		"@sparkbot/logger-plugin-interface": "^0.3.0",
+		"discord.js": "^14.15.2",
+		"pino": "^9.0.0"
+	}
 }
