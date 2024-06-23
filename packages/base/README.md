@@ -22,7 +22,7 @@ It also contains the interface and abstract class that must be extended to creat
 
 @sparkbot/plugin-logger is already included in the Spark⚡️Bot codebase, and the package should not be removed as it contains necessary interfaces for all other plugins to operate.
 
-To configure your Spark⚡️Bot to use @sparkbot/plugin-logger you just need to update `sparkbot.config.ts`:
+To configure your Spark⚡️Bot to use @sparkbot/plugin-logger you need to update `sparkbot.config.ts`, the level you set for logging level is the lowest type you want.
 
 ```ts
 loggingLibraryPlugin: {
@@ -35,4 +35,10 @@ loggingLibraryPlugin: {
 		options: { loggingLevel: LoggingLevel.debug },
 	},
 },
+```
+
+If the LoggingLevel import was removed, you will need to add it the top of the file:
+
+```ts
+import { LoggingLevel } from '@sparkbot/plugin-logger';
 ```
