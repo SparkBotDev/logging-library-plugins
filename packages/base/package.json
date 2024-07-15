@@ -1,7 +1,7 @@
 {
   "name": "@sparkbot/plugin-logger",
   "version": "0.0.0",
-  "description": "The default logging library plugin for Spark⚡️Bot.",
+  "description": "Pino logging library plugin for Spark⚡️Bot.",
   "author": "Brian Lister <brian@sparkforge.dev (http://sparkforge.dev/)",
   "license": "MIT",
   "type": "module",

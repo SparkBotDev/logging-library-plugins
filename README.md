@@ -22,6 +22,7 @@ We are very interested in extending the plugins available for Spark⚡️Bot. If
 ### Official
 
 - [@sparkbot/plugin-logger](./packages/base/#readme) - Default plugin, log to console.
+- [@sparkbot/plugin-logger-pino](./packages/pino/#readme) - [pino](https://getpino.io/#/) logging library plugin.
 
 ### 3rd party
 
