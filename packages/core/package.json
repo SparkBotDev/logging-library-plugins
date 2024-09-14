@@ -7,8 +7,7 @@
 	"type": "module",
 	"dependencies": {
 		"pino": "^9.4.0",
-		"pino-pretty": "^11.2.2",
-		"valibot": "^0.33.3"
+		"pino-pretty": "^11.2.2"
 	},
 	"peerDependencies": {
 		"typescript": "^5.4.5"

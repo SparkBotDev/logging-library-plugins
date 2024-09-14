@@ -1,9 +1,6 @@
 {
 	"version": "0.2",
 	"useGitignore": true,
-	"words": [
-		"commitlint",
-		"markdownlint"
-	],
+	"words": ["commitlint", "markdownlint", "pino"],
 	"flagWords": []
 }
