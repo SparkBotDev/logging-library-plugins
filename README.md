@@ -1,4 +1,4 @@
-# Spark⚡️Bot - Loggin library plugins
+# Spark⚡️Bot - Logging library plugins
 
 <div align="center">
     <a href="https://bun.sh"><img alt="Runs on Bun" src="https://img.shields.io/badge/Runs%20on%20Bun-%23E37AB4?style=flat&logo=bun&logoColor=%23F9F1E1&logoSize=auto&labelColor=%232F2F2F" height=30></a>&nbsp;
@@ -9,7 +9,7 @@
     <img src="https://github.com/SparkBotDev/.github/raw/main/assets/images/readme-banner.png" alt="">
 </div>
 
-[Spark⚡️Bot](https://github.com/SparkBotDev/SparkBot) has an extensible plugin interface that allows developers to integrate their preferred tooling and libraries. This repository contains the officially developed loggin library plugins. Each plugin has a readme containing instructions on how to use it with Spark⚡️Bot.
+[Spark⚡️Bot](https://github.com/SparkBotDev/SparkBot) has an extensible plugin interface that allows developers to integrate their preferred tooling and libraries. This repository contains the officially developed logging library plugins. Each plugin has a readme containing instructions on how to use it with Spark⚡️Bot.
 
 We are very interested in extending the plugins available for Spark⚡️Bot. If you develop a plugin for a logging library, we would love for you to submit a PR to this repo, either adding a link to your plugin below or adding the plugin here as an official plugin.
 
@@ -21,8 +21,7 @@ We are very interested in extending the plugins available for Spark⚡️Bot. If
 
 ### Official
 
-- [@sparkbot/plugin-logger](./packages/base/#readme) - Default plugin, log to console.
-- [@sparkbot/plugin-logger-pino](./packages/pino/#readme) - [pino](https://getpino.io/#/) logging library plugin.
+- [@sparkbot/plugin-logger](./packages/base/#readme) - Default plugin which implements [pino](https://getpino.io/#/) and provides interfaces.
 
 ### 3rd party
 
@@ -31,5 +30,7 @@ We are very interested in extending the plugins available for Spark⚡️Bot. If
 Contributions make Spark⚡️Bot even more dynamic and powerful. Whether you're an experienced developer or just starting out, your ideas, code, and feedback are invaluable. Join our community and help us shape the future of Discord bot development. Together, we can ignite sparks of innovation and elevate the Discord experience for everyone.
 
 Creating a logging library plugin requires extending the Logger class from the @sparkbot/plugin-logger package. When Spark⚡️Bot initializes your class it passes in an options object from the config, and expects the methods error: (exception: Error | string) => void, warn: (exception: Error | string) => void, info: (exception: Error | string) => void, and debug: (exception: Error | string) => void;
+
+We have provided a sample template in the packages folder which contains the basic implementation of a plugin.
 
 This project is released under the terms of the MIT License, which allows for freedom in use and modification. We encourage collaboration and welcome contributions from the community to make Spark⚡️Bot even better!

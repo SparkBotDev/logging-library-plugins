@@ -2,9 +2,8 @@
 	"version": "0.2",
 	"useGitignore": true,
 	"words": [
-		"Spark⚡️Bot",
-		"sparkbot",
-		"SparkBot"
+		"commitlint",
+		"markdownlint"
 	],
 	"flagWords": []
 }

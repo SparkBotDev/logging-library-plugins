@@ -1,11 +1,15 @@
-import { Logger } from '@sparkbot/plugin-logger';
 import { pino, type LoggerOptions, type TransportTargetOptions } from 'pino';
+import { LoggerPlugin } from './interface.ts';
 
-export class LoggerPlugin extends Logger {
+type Level = 'error' | 'warn' | 'info' | 'debug' | 'silent';
+class PinoPlugin extends LoggerPlugin {
 	private readonly logger: pino.Logger;
 
 	constructor(
-		override readonly options: { transports: TransportTargetOptions[] },
+		override readonly options: {
+			loggingLevel: Level;
+			transports: TransportTargetOptions[];
+		},
 	) {
 		super(options);
 		const transport = pino.transport({
@@ -32,4 +36,4 @@ export class LoggerPlugin extends Logger {
 	}
 }
 
-export default LoggerPlugin;
+export default PinoPlugin;
