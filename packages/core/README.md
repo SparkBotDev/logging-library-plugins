@@ -10,10 +10,14 @@
     <img src="https://github.com/SparkBotDev/.github/raw/main/assets/images/readme-banner.png" alt="">
 </div>
 
-@sparkbot/plugin-logger is the default plugin installed in a new [Spark⚡️Bot](https://github.com/SparkBotDev/SparkBot) project. It logs using [pino](https://getpino.io/#/).
+_@sparkbot/plugin-logger_ is the default logging library plugin installed in a new [Spark⚡️Bot](https://github.com/SparkBotDev/SparkBot) project. It logs using [pino](https://getpino.io/#/), and can be configured to use any pino v7 transport.
 
 It also contains the interface and abstract class that must be extended to create new plugins.
 
 <div align="center">
     <a href="https://discord.gg/J3FYK8VmrA"><img alt="Get help on Discord" src="https://img.shields.io/discord/1250847505566929037?logo=discord&logoColor=white&label=Get%20Help&labelColor=%235761E1&color=%2350545B" height=30></a>
 </div>
+
+## Usage
+
+See the main [Spark⚡️Bot documentation](https://github.com/SparkBotDev/core/wiki) for information on how to configure _@sparkbot/plugin-logger_.

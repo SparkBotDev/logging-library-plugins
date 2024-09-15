@@ -29,8 +29,6 @@ We are very interested in extending the plugins available for Spark⚡️Bot. If
 
 Contributions make Spark⚡️Bot even more dynamic and powerful. Whether you're an experienced developer or just starting out, your ideas, code, and feedback are invaluable. Join our community and help us shape the future of Discord bot development. Together, we can ignite sparks of innovation and elevate the Discord experience for everyone.
 
-Creating a logging library plugin requires extending the Logger class from the @sparkbot/plugin-logger package. When Spark⚡️Bot initializes your class it passes in an options object from the config, and expects the methods error: (exception: Error | string) => void, warn: (exception: Error | string) => void, info: (exception: Error | string) => void, and debug: (exception: Error | string) => void;
-
-We have provided a sample template in the packages folder which contains the basic implementation of a plugin.
+Creating a logging library plugin requires extending the `LoggingLibrary` class from the _@sparkbot/plugin-logger package_. When Spark⚡️Bot initializes your class it passes in an options object from the config, and expects the methods error: (exception: Error | string) => void, warn: (exception: Error | string) => void, info: (exception: Error | string) => void, and debug: (exception: Error | string) => void;
 
 This project is released under the terms of the MIT License, which allows for freedom in use and modification. We encourage collaboration and welcome contributions from the community to make Spark⚡️Bot even better!
