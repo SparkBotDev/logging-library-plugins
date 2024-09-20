@@ -10,9 +10,8 @@
 		"packages/*"
 	],
 	"scripts": {
-		"lint": "prettier . --check; xo; markdownlint-cli2 '**/*.md' '#node_modules'; tsc --noEmit --skipLibCheck",
-		"commit": "lint-staged",
-		"coverage": "typescript-coverage-report"
+		"lint": "prettier . --write --log-level warn; xo; markdownlint-cli2 '**/*.md' '#node_modules'; tsc --noEmit --skipLibCheck",
+		"release": "lerna publish"
 	},
 	"lint-staged": {
 		"*.ts": [
