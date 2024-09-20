@@ -10,7 +10,7 @@
     <img src="https://github.com/SparkBotDev/.github/raw/main/assets/images/readme-banner.png" alt="">
 </div>
 
-@sparkbot/plugin-logger is the default plugin installed in a new [Spark⚡️Bot](https://github.com/SparkBotDev/SparkBot) project. It logs to the console.
+_@sparkbot/plugin-logger_ is the default logging library plugin installed in a new [Spark⚡️Bot](https://github.com/SparkBotDev/SparkBot) project. It logs using [pino](https://getpino.io/#/), and can be configured to use any pino v7 transport.
 
 It also contains the interface and abstract class that must be extended to create new plugins.
 
@@ -20,25 +20,4 @@ It also contains the interface and abstract class that must be extended to creat
 
 ## Usage
 
-@sparkbot/plugin-logger is already included in the Spark⚡️Bot codebase, and the package should not be removed as it contains necessary interfaces for all other plugins to operate.
-
-To configure your Spark⚡️Bot to use @sparkbot/plugin-logger you need to update `sparkbot.config.ts`, the level you set for logging level is the lowest type you want.
-
-```ts
-loggingLibraryPlugin: {
-	prod: {
-		module: '@sparkbot/plugin-logger',
-		options: { loggingLevel: LoggingLevel.warn },
-	},
-	dev: {
-		module: '@sparkbot/plugin-logger',
-		options: { loggingLevel: LoggingLevel.debug },
-	},
-},
-```
-
-If the LoggingLevel import was removed, you will need to add it the top of the file:
-
-```ts
-import { LoggingLevel } from '@sparkbot/plugin-logger';
-```
+See the main [Spark⚡️Bot documentation](https://github.com/SparkBotDev/core/wiki) for information on how to configure _@sparkbot/plugin-logger_.
