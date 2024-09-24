@@ -16,7 +16,7 @@ class PinoPlugin extends LoggerPlugin {
 			targets: options.transports,
 		}) as LoggerOptions;
 		this.logger = pino(transport);
-		this.logger.level = 'debug';
+		this.logger.level = options.loggingLevel;
 	}
 
 	error(exception: Error | string) {

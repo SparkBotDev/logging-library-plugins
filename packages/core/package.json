@@ -1,6 +1,6 @@
 {
 	"name": "@sparkbot/plugin-logger",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"description": "Default logging library plugin for Spark⚡️Bot.",
 	"author": "Brian Lister <brian@sparkforge.dev (http://sparkforge.dev/)",
 	"license": "MIT",
